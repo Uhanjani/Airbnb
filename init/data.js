@@ -1,0 +1,38 @@
+
+const listings = [
+  { title: "Cottage 68", description: "Beautiful view of the beach", image: "https://picsum.photos/200?random=68", price: 580000, location: "Bangalore", country: "UK" },
+  { title: "Bungalow 69", description: "Near city center", image: "", price: 600000, location: "Chennai", country: "Australia" },
+  { title: "Penthouse 70", description: "Luxury and comfort guaranteed", image: "https://picsum.photos/200?random=70", price: 720000, location: "Kolkata", country: "Canada" },
+  { title: "Villa 71", description: "Beautiful view of the beach", image: "", price: 450000, location: "Mumbai", country: "India" },
+  { title: "Apartment 72", description: "Cozy and modern interior", image: "https://picsum.photos/200?random=72", price: 320000, location: "Delhi", country: "USA" },
+  { title: "Cottage 73", description: "Spacious rooms with garden", image: "", price: 520000, location: "Bangalore", country: "UK" },
+  { title: "Bungalow 74", description: "Near city center", image: "https://picsum.photos/200?random=74", price: 610000, location: "Chennai", country: "Australia" },
+  { title: "Penthouse 75", description: "Luxury and comfort guaranteed", image: "", price: 750000, location: "Kolkata", country: "Canada" },
+  { title: "Villa 76", description: "Cozy and modern interior", image: "https://picsum.photos/200?random=76", price: 410000, location: "Mumbai", country: "India" },
+  { title: "Apartment 77", description: "Spacious rooms with garden", image: "", price: 330000, location: "Delhi", country: "USA" },
+  { title: "Cottage 78", description: "Beautiful view of the beach", image: "https://picsum.photos/200?random=78", price: 580000, location: "Bangalore", country: "UK" },
+  { title: "Bungalow 79", description: "Near city center", image: "", price: 600000, location: "Chennai", country: "Australia" },
+  { title: "Penthouse 80", description: "Luxury and comfort guaranteed", image: "https://picsum.photos/200?random=80", price: 720000, location: "Kolkata", country: "Canada" },
+  { title: "Villa 81", description: "Beautiful view of the beach", image: "", price: 450000, location: "Mumbai", country: "India" },
+  { title: "Apartment 82", description: "Cozy and modern interior", image: "https://picsum.photos/200?random=82", price: 320000, location: "Delhi", country: "USA" },
+  { title: "Cottage 83", description: "Spacious rooms with garden", image: "", price: 520000, location: "Bangalore", country: "UK" },
+  { title: "Bungalow 84", description: "Near city center", image: "https://picsum.photos/200?random=84", price: 610000, location: "Chennai", country: "Australia" },
+  { title: "Penthouse 85", description: "Luxury and comfort guaranteed", image: "", price: 750000, location: "Kolkata", country: "Canada" },
+  { title: "Villa 86", description: "Cozy and modern interior", image: "https://picsum.photos/200?random=86", price: 410000, location: "Mumbai", country: "India" },
+  { title: "Apartment 87", description: "Spacious rooms with garden", image: "", price: 330000, location: "Delhi", country: "USA" },
+  { title: "Cottage 88", description: "Beautiful view of the beach", image: "https://picsum.photos/200?random=88", price: 580000, location: "Bangalore", country: "UK" },
+  { title: "Bungalow 89", description: "Near city center", image: "", price: 600000, location: "Chennai", country: "Australia" },
+  { title: "Penthouse 90", description: "Luxury and comfort guaranteed", image: "https://picsum.photos/200?random=90", price: 720000, location: "Kolkata", country: "Canada" },
+  { title: "Villa 91", description: "Beautiful view of the beach", image: "", price: 450000, location: "Mumbai", country: "India" },
+  { title: "Apartment 92", description: "Cozy and modern interior", image: "https://picsum.photos/200?random=92", price: 320000, location: "Delhi", country: "USA" },
+  { title: "Cottage 93", description: "Spacious rooms with garden", image: "", price: 520000, location: "Bangalore", country: "UK" },
+  { title: "Bungalow 94", description: "Near city center", image: "https://picsum.photos/200?random=94", price: 610000, location: "Chennai", country: "Australia" },
+  { title: "Penthouse 95", description: "Luxury and comfort guaranteed", image: "", price: 750000, location: "Kolkata", country: "Canada" },
+  { title: "Villa 96", description: "Cozy and modern interior", image: "https://picsum.photos/200?random=96", price: 410000, location: "Mumbai", country: "India" },
+  { title: "Apartment 97", description: "Spacious rooms with garden", image: "", price: 330000, location: "Delhi", country: "USA" },
+  { title: "Cottage 98", description: "Beautiful view of the beach", image: "https://picsum.photos/200?random=98", price: 580000, location: "Bangalore", country: "UK" },
+  { title: "Bungalow 99", description: "Near city center", image: "", price: 600000, location: "Chennai", country: "Australia" },
+  { title: "Penthouse 100", description: "Luxury and comfort guaranteed", image: "https://picsum.photos/200?random=100", price: 720000, location: "Kolkata", country: "Canada" }
+];
+
+module.exports = listings;

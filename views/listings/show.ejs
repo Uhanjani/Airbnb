@@ -1,0 +1,21 @@
+<%- layout("./layouts/biolerplate") -%>
+
+<div class="show-list-container">
+  <h3>Listing Details</h3>
+
+  <img src="<%= list.image || 'https://via.placeholder.com/400x250?text=No+Image' %>" alt="<%= list.title || 'Listing' %>" class="show-img">
+
+  <ul class="show-list">
+    <li><strong>Title:</strong> <%= list.title || 'Untitled Listing' %></li>
+    <li><strong>Description:</strong> <%= list.description || 'No description available' %></li>
+    <li><strong>Price:</strong> ₹<%= list.price.toLocaleString("en-IN") %></li>
+    <li><strong>Location:</strong> <%= list.location || 'Location not available' %></li>
+    <li><strong>Country:</strong> <%= list.country || 'Country not available' %></li>
+    
+  </ul>
+
+  <div class="show-actions">
+    <a href="/listings/<%= list._id %>/edit" class="edit-btn">Edit</a>
+    <a href="/listings/<%= list._id %>/delete" class="delete-btn">Delete</a>
+  </div>
+</div>

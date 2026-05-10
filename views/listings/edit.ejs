@@ -1,0 +1,25 @@
+<%- layout("./layouts/biolerplate") -%>
+<div class="edit-list-container">
+  <h3>Edit Listing</h3>
+
+  <form method="post" action="/listings/<%= list._id %>?_method=PATCH" class="edit-list-form">
+    <label>Title:</label>
+    <textarea name="listing[title]"><%= list.title %></textarea>
+
+    <label>Description:</label>
+    <textarea name="listing[description]"><%= list.description %></textarea>
+
+    <label>Price:</label>
+    <textarea name="listing[price]"><%= list.price %></textarea>
+
+    <label>Location:</label>
+    <textarea name="listing[location]"><%= list.location %></textarea>
+
+    <label>Country:</label>
+    <textarea name="listing[country]"><%= list.country %></textarea>
+    <label>Image URL:</label><br>
+    <textarea name="listing[image]"><%= list.image %></textarea><br><br>
+
+    <button type="submit">Submit</button>
+  </form>
+</div>

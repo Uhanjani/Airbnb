@@ -1,0 +1,16 @@
+<%- layout("./layouts/biolerplate") -%>
+
+<div class="new-list-container">
+  <h3>Add New Listing</h3>
+  <form method="post" action="/listings" class="needs-validation new-list-form" >
+    <input placeholder="Enter title" name="listing[title]" type="text" required>
+    <textarea placeholder="Enter description" name="listing[description]" required></textarea>
+    <input placeholder="Enter price" name="listing[price]" type="number" required>
+    <input placeholder="Enter location" name="listing[location]" type="text" required>
+    <input placeholder="Enter country" name="listing[country]" type="text" required>
+     <input placeholder="Enter image URL" name="listing[image]" type="text"><br>
+    <button type="submit">Add</button>
+  </form>
+  </div>
+<script src="/js/script.js"></script>
+
