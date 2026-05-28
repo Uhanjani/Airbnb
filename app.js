@@ -10,7 +10,8 @@ const Listing = require("./models/listing.js");
 const asyncWrap = require("./utils/asyncWrap.js");
 const ExpressError = require("./utils/ExpressError.js");
 
-const port = 3000;
+const port = process.env.PORT || 3000;
+const dbUrl = process.env.MONGO_URL || 'mongodb://127.0.0.1:27017/wonderlust';
 
 // ---------- MIDDLEWARE & CONFIG ----------
 app.engine("ejs", ejs_mate);
@@ -22,7 +23,7 @@ app.set("views", path.join(__dirname, "views"));
 
 // ---------- DATABASE CONNECTION ----------
 async function main() {
-  await mongoose.connect('mongodb://127.0.0.1:27017/wonderlust');
+  await mongoose.connect(dbUrl);
 }
 main()
   .then(() => console.log("Database connected"))
