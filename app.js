@@ -23,11 +23,10 @@ app.set("views", path.join(__dirname, "views"));
 
 // ---------- DATABASE CONNECTION ----------
 async function main() {
-  await mongoose.connect(dbUrl);
+  await mongoose.connect(dbUrl, {
+    serverSelectionTimeoutMS: 5000,
+  });
 }
-main()
-  .then(() => console.log("Database connected"))
-  .catch(err => console.log(err));
 
 // ---------- ROUTES ----------
 app.get("/", (req, res) => {
@@ -99,6 +98,14 @@ app.use((err, req, res, next) => {
 });
 
 // ---------- SERVER START ----------
-app.listen(port, () => {
-  console.log("Server is listening to port:", port);
-});
+main()
+  .then(() => {
+    console.log("Database connected");
+    app.listen(port, () => {
+      console.log("Server is listening to port:", port);
+    });
+  })
+  .catch(err => {
+    console.error("Database connection failed:", err.message);
+    process.exit(1);
+  });
